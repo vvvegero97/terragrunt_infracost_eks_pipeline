@@ -24,7 +24,7 @@ dependency "sg" {
 }
 
 inputs = {
-  cluster_name = "vegero-eks"
+  cluster_name = "vvvegero-eks"
   vpc_id       = dependency.vpc.outputs.vpc_id
   subnet_ids   = dependency.vpc.outputs.private_subnets
   sg_ids       = dependency.sg.outputs.sg_ids
