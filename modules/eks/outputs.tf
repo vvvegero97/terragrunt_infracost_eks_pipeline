@@ -18,7 +18,7 @@ output "config_map_aws_auth" {
   value       = module.eks.config_map_aws_auth
 }
 
-output "cluster_name" {
-  description = "Kubernetes Cluster Name"
-  value       = module.eks.cluster_name
-}
+# output "cluster_name" {
+#   description = "Kubernetes Cluster Name"
+#   value       = module.eks.cluster_name
+# }
