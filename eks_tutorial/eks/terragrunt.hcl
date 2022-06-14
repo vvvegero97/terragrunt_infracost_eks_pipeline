@@ -27,5 +27,5 @@ inputs = {
   cluster_name = "vegero-eks"
   vpc_id       = dependency.vpc.outputs.vpc_id
   subnet_ids   = dependency.vpc.outputs.private_subnets
-  sg_id        = dependency.sg.outputs.sg_id
+  sg_ids       = dependency.sg.outputs.sg_ids
 }
