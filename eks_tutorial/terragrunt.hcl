@@ -6,11 +6,11 @@ remote_state {
     if_exists = "overwrite_terragrunt"
   }
   config = {
-    bucket         = "vegero-terragrunt-states-backend"
+    bucket         = "vegero-terragrunt-states-backend-1"
     key            = "${path_relative_to_include()}/terraform.tfstate"
     region         = local.aws_region
     encrypt        = true
-    dynamodb_table = "vegero-terragrunt-states-backend"
+    dynamodb_table = "vegero-terragrunt-states-backend-1"
   }
 }
 
@@ -39,7 +39,7 @@ EOF
 
 locals {
   aws_region        = "eu-north-1"
-  deployment_prefix = "vegero-eks"
+  deployment_prefix = "vvvegero-eks"
 }
 
 inputs = {
