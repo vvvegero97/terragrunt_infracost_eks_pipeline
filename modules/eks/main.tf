@@ -41,19 +41,22 @@ module "eks" {
   worker_groups = [
     {
       name                          = "worker-group-1"
-      instance_type                 = "t3.micro"
+      instance_type                 = "t3.medium"
       additional_userdata           = "echo foo bar"
       additional_security_group_ids = var.sg_ids[0]
       asg_desired_capacity          = 1
     },
     {
       name                          = "worker-group-2"
-      instance_type                 = "t3.micro"
+      instance_type                 = "t3.medium"
       additional_userdata           = "echo foo bar"
       additional_security_group_ids = var.sg_ids[1]
       asg_desired_capacity          = 1
     },
   ]
+
+  map_users    = var.map_users
+  map_accounts = var.map_accounts
 }
 
 data "aws_eks_cluster" "cluster" {
