@@ -1,7 +1,7 @@
 # Terragrunt - CI/CD Provisioning an EKS Cluster
-Terragrunt and Infracost pipeline with TF modules
-Pull request to main branch tg folder ==> Terragrunt checks ans Infracost info
-Push/merge to main branch tg folder ==> Terragrunt apply
+- Terragrunt and Infracost pipeline with TF modules
+- Pull request to main branch tg folder ==> Terragrunt checks ans Infracost info
+- Push/merge to main branch tg folder ==> Terragrunt apply
 # Resources created:
 1. VPC with 3 public and private subnets
 2. SGs for worker node groups
