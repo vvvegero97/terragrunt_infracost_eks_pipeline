@@ -1,3 +1,6 @@
+Status of Last Deployment:<br>
+<img src="https://github.com/vvvegero97/
+terragrunt_infracost_eks_pipeline/workflows/Terragrunt CI/CD Pipeline/badge.svg?branch=main"><br>
 # Terragrunt - CI/CD Provisioning an EKS Cluster
 - Terragrunt and Infracost pipeline with TF modules
 - Pull request to main branch eks_tutorial folder ==> Terragrunt checks ans Infracost info
