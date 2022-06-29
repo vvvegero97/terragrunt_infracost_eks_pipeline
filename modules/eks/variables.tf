@@ -48,3 +48,18 @@ variable "map_users" {
     },
   ]
 }
+
+variable "map_roles" {
+  description = "Additional IAM roles to add to the aws-auth configmap."
+  type = list(object({
+    rolearn  = string
+    username = string
+    groups   = list(string)
+  }))
+
+  default = [{
+    rolearn  = "arn:aws:iam::178112661675:role/EC2_ECR_Access"
+    username = "EC2_ECR_Access"
+    groups   = ["system:masters"]
+  }]
+}

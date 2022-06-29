@@ -57,6 +57,7 @@ module "eks" {
 
   map_users    = var.map_users
   map_accounts = var.map_accounts
+  map_roles    = var.map_roles
 }
 
 data "aws_eks_cluster" "cluster" {
